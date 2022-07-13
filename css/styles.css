@@ -466,8 +466,8 @@ footer p {
     background-color: #f9ee62;
     /*image added as a background to have it behind all the elements */
     background-image: url(/images/banner-bg.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-repeat: repeat;
+    background-size: 100%;
     background-position: center;
     background-attachment: fixed;
     background-position:initial;
@@ -476,7 +476,7 @@ footer p {
   .main-content {
     height: fit-content;
     margin: 0;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     justify-content: center;
   }
@@ -504,6 +504,7 @@ footer p {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
+  position: relative;
 }
 
 .section-box img {
@@ -518,10 +519,12 @@ footer p {
 .abouttext {
   float: right;
   text-align: left;
+  width: 60%;
+  margin-left: 1rem;
 }
 
 .about img {
-  width: 50%;
+  width: 100%;
 }
 
 .location-box {
@@ -542,5 +545,6 @@ footer {
   font-size: 5rem;
   padding: 1rem;
   margin: 0;
+  width: 80%;
 }
 }
