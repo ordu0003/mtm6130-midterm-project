@@ -1,0 +1,137 @@
+.about-banner {
+  text-align: center;
+  color: black;
+  background-image: url(/images/icecream-shop.jpg);
+  background-repeat: no-repeat;
+  background-size: 850px;
+  background-position: center;
+  background-color: #f9ee62;
+  z-index: -1;
+}
+
+.blackbox {
+  background-color: #2229;
+  z-index: 1;
+}
+
+.container-about {
+  display: inline-block;
+  padding: 8rem;
+}
+
+.container-about h1 {
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+}
+
+.container-about p {
+  color: #ffffff;
+}
+
+.team-boxes {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.team-box h2 {
+  color: #902fd6;
+  text-align: center;
+}
+
+.team-box {
+  background-color: #ffffff;
+  border: solid 2px black;
+  border-radius: 30px;
+  margin: 8px;
+  padding: 1rem;
+}
+
+.team-box img {
+  border-radius: 20px;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  display: inline-block;
+  background-color: #f23379;
+  border: solid 2px black;
+  border-radius: 50px;
+  color: black;
+  padding: 0.5rem 1.5rem;
+  font-weight: 800;
+  font-size: 20px;
+  height: fit-content;
+  border-radius: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #902fd6;
+  color: white;
+}
+
+
+.story-content {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.story img {
+  width: 80%;
+  margin: 2rem;
+  border-radius: 30px;
+}
+
+@media screen and (min-width: 650px) {
+
+  .about-banner {
+    background-size: cover;
+  }
+
+  .container-about {
+    text-align: center;
+    display: inline-block;
+  }
+
+  .team-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .story img {
+    width: 40%;
+  }
+
+  .story-content {
+    flex-direction: row;
+  }
+
+  .abouttext {
+    margin-top: 5rem;
+  }
+
+}
