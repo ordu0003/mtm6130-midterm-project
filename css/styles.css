@@ -25,6 +25,7 @@ header {
   background-color: #f23379;
   margin: 0 auto;
   align-items: center;
+  border-bottom: solid 2px black;
 }
 
 .logo {
@@ -80,10 +81,59 @@ main {
    margin: 0;
    padding: 0;
  }
-
+/*
 h1 {
   margin: 0;
   width: fit-content;
+}*/
+
+/*tittle animation*/
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #f23379;
+  --color-2: #2878d7;
+  --color-3: #f23379;
+}
+
+.title-word-2 {
+  --color-1: white;
+  --color-2: #902fd6;
+  --color-3: black;
+}
+
+.title-word-3 {
+  --color-1: #902fd6;
+  --color-2: black;
+  --color-3: #2878d7;
+}
+
+.title-word-4 {
+  --color-1: #2878d7;
+  --color-2: #f23379;
+  --color-3: #902fd6;
+}
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
+
+
+.main-title {
+  font-weight: 800;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 2rem;
+
 }
 
 h2 {
@@ -412,12 +462,6 @@ footer p {
     max-width: 1200px;
   }
 
-  h1 {
-    font-size: 4rem;
-    width: fit-content;
-    margin: 0;
-  }
-
   .main-banner {
     background-color: #f9ee62;
     /*image added as a background to have it behind all the elements */
@@ -432,13 +476,18 @@ footer p {
   .main-content {
     height: fit-content;
     margin: 0;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   
   .main-content img {
-    float: right;
     width: 50%;
-    margin-left: 10rem;
+    margin-left: 15rem;
+  }
+
+  .main-content .button1 {
+    margin-left: 29rem;
   }
 
 .boxes {
